@@ -62,7 +62,7 @@ def get_recommendation(n, p, k, temp, humid, ph, rain):
 if __name__ == "__main__":
     # Run the automated pipeline
     try:
-        data = load_data('Crop_recommendation.csv')
+        data = load_data('crs.csv')
         train_pipeline(data)
         
         # Test Case Example
@@ -70,4 +70,4 @@ if __name__ == "__main__":
         get_recommendation(n=60, p=20, k=50, temp=5, humid=82.1, ph=7.5, rain=50.4)
         
     except Exception as e:
-        print(f"❌ Error occurred: {e}")
+        print(f"❌ Error occurred: {e}") 
